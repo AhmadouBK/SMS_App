@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez le numéro de téléphone"
+            android:inputType="phone"
+            android:layout_margin="16dp"/>
+
+    <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez le message"
+            android:layout_below="@id/editTextPhone"
+            android:layout_margin="16dp"/>
+
+    <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envoyer SMS"
+            android:layout_below="@id/editTextMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"/>
+
+    <!-- TextView pour afficher les SMS reçus -->
+    <TextView
+            android:id="@+id/textViewReceivedSMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSend"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:background="#EFEFEF"
+            android:text="SMS reçus apparaîtront ici"/>
+</RelativeLayout>
